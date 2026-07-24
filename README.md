@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/hero.gif" alt="Agung Laksono — Senior Fullstack & Penetration Systems Engineer" width="100%" />
+  <img src="./assets/hero.svg" alt="Agung Laksono — Senior Fullstack & Penetration Systems Engineer" width="100%" />
 </div>
 
 ## Building systems that survive production & penetration audits
@@ -73,7 +73,7 @@ I value maintainable contracts, practical security, observable deployments, and 
 ---
 
 <div align="center">
-  <img src="./assets/agung-mark.gif" width="84" alt="Agung Laksono Cyber Shield Monogram" />
+  <img src="./assets/agung-mark.svg" width="84" alt="Agung Laksono Cyber Shield Monogram" />
   <br />
   <sub>Fintech · Penetration Systems · AI Product Engineering · Resilient Operations</sub>
 </div>

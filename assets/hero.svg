@@ -1,83 +1,211 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-  <title id="title">Agung Laksono — Senior Fullstack & Penetration Systems Engineer</title>
-  <desc id="desc">Cybersecurity terminal and systems engineering hero banner</desc>
+  <title id="title">Agung Laksono — Senior Fullstack &amp; Penetration Systems Engineer</title>
+  <desc id="desc">Animated cybersecurity terminal and systems engineering hero banner</desc>
+
   <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;family=Fira+Code:wght@400;600&amp;display=swap');
+
+      * {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .mono {
+        font-family: 'Fira Code', 'Courier New', Courier, monospace;
+      }
+
+      /* Background grid animation */
+      @keyframes pan {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-40px); }
+      }
+      .grid-layer {
+        animation: pan 10s linear infinite;
+      }
+
+      /* Blinking cursor */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .cursor {
+        animation: blink 1s step-end infinite;
+      }
+
+      /* Terminal Typing Effect */
+      .line { opacity: 0; }
+      .l1 { animation: typeLine 0.1s forwards 0.5s; }
+      .l2 { animation: typeLine 0.1s forwards 1.2s; }
+      .l3 { animation: typeLine 0.1s forwards 2.0s; }
+      .l4 { animation: typeLine 0.1s forwards 2.8s; }
+      .l5 { animation: typeLine 0.1s forwards 3.6s; }
+      .l6 { animation: typeLine 0.1s forwards 4.4s; }
+      .l7 { animation: typeLine 0.1s forwards 5.2s; }
+      .l8 { animation: typeLine 0.1s forwards 6.0s; }
+
+      @keyframes typeLine {
+        to { opacity: 1; }
+      }
+
+      /* Pulse animation for badges */
+      @keyframes pulse {
+        0% { filter: drop-shadow(0 0 2px rgba(0,255,102,0.2)); }
+        50% { filter: drop-shadow(0 0 8px rgba(0,255,102,0.6)); }
+        100% { filter: drop-shadow(0 0 2px rgba(0,255,102,0.2)); }
+      }
+      .badge-glow {
+        animation: pulse 3s infinite;
+      }
+      
+      /* Radar Ping */
+      @keyframes ping {
+        0% { transform: scale(1); opacity: 0.8; }
+        100% { transform: scale(2.5); opacity: 0; }
+      }
+      .radar-ping {
+        transform-origin: center;
+        animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+    </style>
+
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2937" stroke-width="1.2" opacity="0.6"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2937" stroke-width="1" opacity="0.5"/>
     </pattern>
+
     <linearGradient id="bgFade" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F19"/>
-      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="0%" stop-color="#090C10"/>
       <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
-    <linearGradient id="greenCyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00FF66"/>
       <stop offset="100%" stop-color="#00F0FF"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="420" rx="20" fill="url(#bgFade)"/>
-  <rect width="1200" height="420" rx="20" fill="url(#grid)"/>
+  <rect width="1200" height="420" rx="16" fill="url(#bgFade)"/>
+  
+  <svg x="0" y="0" width="1200" height="420">
+    <rect width="1200" height="460" fill="url(#grid)" class="grid-layer"/>
+  </svg>
 
   <!-- Left Header Content -->
-  <g transform="translate(60, 55)">
-    <!-- Top accent bar -->
-    <rect x="0" y="0" width="56" height="4" rx="2" fill="#00FF66"/>
-    <text x="68" y="6" fill="#00FF66" font-family="'Courier New', monospace" font-size="13" font-weight="700" letter-spacing="2">● PENETRATION OPS : ONLINE</text>
+  <g transform="translate(60, 60)">
+    
+    <!-- Status Indicator -->
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="8" r="4" fill="#00FF66"/>
+      <circle cx="10" cy="8" r="4" fill="#00FF66" class="radar-ping"/>
+      <rect x="24" y="0" width="56" height="4" rx="2" fill="#00FF66"/>
+      <text x="90" y="10" fill="#00FF66" font-size="12" font-weight="600" letter-spacing="2" class="mono">PENETRATION OPS : ONLINE</text>
+    </g>
 
     <!-- Name & Title -->
-    <text x="0" y="52" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800" letter-spacing="1">AGUNG LAKSONO</text>
-    <text x="0" y="86" fill="url(#greenCyanGrad)" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" letter-spacing="1.5">SENIOR FULLSTACK &amp; PENETRATION SYSTEMS ENGINEER</text>
+    <text x="0" y="60" fill="#F3F4F6" font-size="48" font-weight="800" letter-spacing="-0.5">AGUNG LAKSONO</text>
+    <text x="0" y="96" fill="url(#textGrad)" font-size="22" font-weight="600" letter-spacing="1.5">SENIOR FULLSTACK &amp; PENETRATION SYSTEMS ENGINEER</text>
 
     <!-- Subtitle description -->
-    <text x="0" y="142" fill="#9CA3AF" font-family="Georgia, serif" font-size="20">Architecting secure multi-tenant platforms, financial engines,</text>
-    <text x="0" y="172" fill="#9CA3AF" font-family="Georgia, serif" font-size="20">penetration system isolation, and production AI/RAG pipelines.</text>
+    <text x="0" y="152" fill="#9CA3AF" font-size="20" font-weight="400" line-height="1.6">Architecting secure multi-tenant platforms, financial engines,</text>
+    <text x="0" y="184" fill="#9CA3AF" font-size="20" font-weight="400" line-height="1.6">penetration system isolation, and production AI/RAG pipelines.</text>
 
     <!-- Tech Badges -->
-    <g transform="translate(0, 220)" font-family="'Courier New', monospace" font-size="12" font-weight="700">
+    <g transform="translate(0, 240)">
       <!-- Badge 1 -->
-      <rect width="180" height="34" rx="6" fill="#111827" stroke="#00FF66" stroke-width="1.5"/>
-      <text x="14" y="22" fill="#00FF66">⚡ PENETRATION SYSTEMS</text>
+      <g class="badge-glow" transform="translate(0, 0)">
+        <rect width="190" height="36" rx="6" fill="#111827" stroke="#00FF66" stroke-width="1.5"/>
+        <text x="14" y="23" fill="#00FF66" font-size="13" font-weight="600" class="mono">⚡ PENTEST SYSTEMS</text>
+      </g>
 
       <!-- Badge 2 -->
-      <rect x="194" width="170" height="34" rx="6" fill="#111827" stroke="#00F0FF" stroke-width="1.5"/>
-      <text x="208" y="22" fill="#00F0FF">🛡️ ZERO-TRUST SAAS</text>
+      <g transform="translate(204, 0)">
+        <rect width="180" height="36" rx="6" fill="#111827" stroke="#00F0FF" stroke-width="1.5"/>
+        <text x="14" y="23" fill="#00F0FF" font-size="13" font-weight="600" class="mono">🛡️ ZERO-TRUST SAAS</text>
+      </g>
 
       <!-- Badge 3 -->
-      <rect x="378" width="130" height="34" rx="6" fill="#111827" stroke="#9333EA" stroke-width="1.5"/>
-      <text x="392" y="22" fill="#C084FC">🤖 AI / RAG</text>
+      <g transform="translate(398, 0)">
+        <rect width="130" height="36" rx="6" fill="#111827" stroke="#9333EA" stroke-width="1.5"/>
+        <text x="14" y="23" fill="#C084FC" font-size="13" font-weight="600" class="mono">🤖 AI / RAG</text>
+      </g>
 
       <!-- Badge 4 -->
-      <rect x="522" width="110" height="34" rx="6" fill="#111827" stroke="#F59E0B" stroke-width="1.5"/>
-      <text x="536" y="22" fill="#FBBF24">📈 FINTECH</text>
+      <g transform="translate(542, 0)">
+        <rect width="120" height="36" rx="6" fill="#111827" stroke="#F59E0B" stroke-width="1.5"/>
+        <text x="14" y="23" fill="#FBBF24" font-size="13" font-weight="600" class="mono">📈 FINTECH</text>
+      </g>
     </g>
   </g>
 
   <!-- Right Side: Cybersecurity Terminal Frame -->
-  <g transform="translate(690, 45)">
-    <!-- Terminal Box -->
-    <rect width="450" height="330" rx="12" fill="#0D1117" stroke="#1F2937" stroke-width="2"/>
-    <!-- Header Bar -->
-    <path d="M 0 12 Q 0 0 12 0 L 438 0 Q 450 0 450 12 L 450 36 L 0 36 Z" fill="#161B22"/>
-    <!-- Controls -->
-    <circle cx="20" cy="18" r="6" fill="#EF4444"/>
-    <circle cx="38" cy="18" r="6" fill="#F59E0B"/>
-    <circle cx="56" cy="18" r="6" fill="#10B981"/>
-    <text x="80" y="22" fill="#9CA3AF" font-family="'Courier New', monospace" font-size="12">zippo-sec-kernel v3.4 — bash</text>
+  <g transform="translate(710, 40)">
+    
+    <!-- Outer Glow -->
+    <rect width="440" height="340" rx="10" fill="none" stroke="#00F0FF" stroke-width="1" opacity="0.2"/>
+    <rect width="440" height="340" rx="10" fill="#0D1117" stroke="#1F2937" stroke-width="1"/>
+    
+    <!-- Terminal Header -->
+    <path d="M 0 10 Q 0 0 10 0 L 430 0 Q 440 0 440 10 L 440 36 L 0 36 Z" fill="#161B22"/>
+    
+    <!-- Window Controls -->
+    <circle cx="20" cy="18" r="6" fill="#FF5F56"/>
+    <circle cx="40" cy="18" r="6" fill="#FFBD2E"/>
+    <circle cx="60" cy="18" r="6" fill="#27C93F"/>
+    
+    <text x="86" y="22" fill="#8B949E" font-size="12" class="mono">zippo-sec-kernel v3.4 — bash</text>
 
-    <!-- Terminal Content -->
-    <g transform="translate(20, 60)" font-family="'Courier New', monospace" font-size="13">
-      <text x="0" y="20" fill="#00F0FF">$ zippo-sec --target prod.net --audit</text>
-      <text x="0" y="48" fill="#9CA3AF">[+] Initializing Security Audit...</text>
-      <text x="0" y="76" fill="#00FF66">[+] Port 443 (TLS 1.3): ENCRYPTED [OK]</text>
-      <text x="0" y="104" fill="#00FF66">[+] Tenant Isolation: PASS (0 Leak)</text>
-      <text x="0" y="132" fill="#00FF66">[+] Pentest Scan: 0 Vulnerabilities</text>
-      <text x="0" y="160" fill="#F59E0B">[+] Performance: +40% Optimized</text>
-      <text x="0" y="196" fill="#00FF66">[✓] AUDIT COMPLETE - SYSTEM SECURE</text>
+    <!-- Terminal Content Area -->
+    <g transform="translate(20, 70)" font-size="14" class="mono">
+      
+      <!-- Line 1 -->
+      <g class="line l1">
+        <text x="0" y="0" fill="#00F0FF">$</text>
+        <text x="18" y="0" fill="#E6EDF3">zippo-sec --target prod.net --audit</text>
+      </g>
+      
+      <!-- Line 2 -->
+      <g class="line l2">
+        <text x="0" y="32" fill="#8B949E">[+] Initializing Zero-Trust Security Audit...</text>
+      </g>
+      
+      <!-- Line 3 -->
+      <g class="line l3">
+        <text x="0" y="64" fill="#00FF66">[+]</text>
+        <text x="32" y="64" fill="#E6EDF3">Port 443 (TLS 1.3):</text>
+        <text x="210" y="64" fill="#00FF66">ENCRYPTED [OK]</text>
+      </g>
+      
+      <!-- Line 4 -->
+      <g class="line l4">
+        <text x="0" y="96" fill="#00FF66">[+]</text>
+        <text x="32" y="96" fill="#E6EDF3">Tenant Isolation:</text>
+        <text x="190" y="96" fill="#00FF66">SECURE (0 Leak)</text>
+      </g>
 
-      <!-- Terminal Prompt with blinking cursor -->
-      <text x="0" y="234" fill="#00F0FF">zippo@sec-node:~$ <tspan fill="#00FF66">█</tspan></text>
+      <!-- Line 5 -->
+      <g class="line l5">
+        <text x="0" y="128" fill="#00FF66">[+]</text>
+        <text x="32" y="128" fill="#E6EDF3">Pentest Scan:</text>
+        <text x="160" y="128" fill="#00FF66">0 Vulnerabilities Found</text>
+      </g>
+      
+      <!-- Line 6 -->
+      <g class="line l6">
+        <text x="0" y="160" fill="#F59E0B">[+]</text>
+        <text x="32" y="160" fill="#E6EDF3">System Throughput:</text>
+        <text x="200" y="160" fill="#F59E0B">+40% Optimized</text>
+      </g>
+      
+      <!-- Line 7 -->
+      <g class="line l7">
+        <text x="0" y="200" fill="#00FF66" font-weight="600">[✓] PENETRATION AUDIT COMPLETE - SYSTEM SECURE</text>
+      </g>
+      
+      <!-- Line 8 -->
+      <g class="line l8">
+        <text x="0" y="240" fill="#00F0FF">zippo@sec-node:~$</text>
+        <rect x="156" y="228" width="10" height="16" fill="#00FF66" class="cursor"/>
+      </g>
+      
     </g>
   </g>
 </svg>

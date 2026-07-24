@@ -1,80 +1,85 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Agung Laksono — Cyber Shield Monogram</title>
-  <desc id="desc">Animated penetration system core shield monogram</desc>
+  <title id="title">Agung Laksono — Tactical Monolith Monogram</title>
+  <desc id="desc">Industrial stealth monogram in copper and slate</desc>
   <defs>
     <style>
-      @keyframes spin { 100% { transform: rotate(360deg); } }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.4; transform: scale(1); filter: drop-shadow(0 0 4px #00FF66); }
-        50% { opacity: 1; transform: scale(1.02); filter: drop-shadow(0 0 12px #00FF66); }
+      /* Smooth reflections and slow rotations for tactical feel */
+      @keyframes spin-slow { 
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); } 
       }
-      .ring {
-        transform-origin: 256px 256px;
-        animation: spin 20s linear infinite;
+      @keyframes pulse-subtle {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px rgba(215,154,91,0.3)); }
       }
-      .ring-reverse {
+      .ring-outer {
         transform-origin: 256px 256px;
-        animation: spin 30s linear reverse infinite;
+        animation: spin-slow 40s linear infinite;
       }
-      .core-glow {
+      .ring-inner {
         transform-origin: 256px 256px;
-        animation: pulse 3s ease-in-out infinite;
+        animation: spin-slow 25s linear reverse infinite;
+      }
+      .copper-glow {
+        animation: pulse-subtle 4s ease-in-out infinite;
       }
     </style>
-    
-    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F0FF" stop-opacity="1"/>
-      <stop offset="50%" stop-color="#00FF66" stop-opacity="1"/>
-      <stop offset="100%" stop-color="#9333EA" stop-opacity="1"/>
+
+    <linearGradient id="copperGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2B081"/>
+      <stop offset="50%" stop-color="#D79A5B"/>
+      <stop offset="100%" stop-color="#A56E3B"/>
     </linearGradient>
 
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#090C10"/>
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
     </linearGradient>
   </defs>
 
   <!-- Base background card -->
-  <rect width="512" height="512" rx="96" fill="url(#bgGrad)" stroke="#1F2937" stroke-width="4"/>
+  <rect width="512" height="512" rx="48" fill="url(#bgGrad)" stroke="#222222" stroke-width="2"/>
   
-  <!-- Subtle Grid lines -->
-  <path d="M64 256h384M256 64v384" stroke="#1F2937" stroke-width="2" stroke-dasharray="8 8"/>
-  <circle cx="256" cy="256" r="180" fill="none" stroke="#1F2937" stroke-width="2"/>
+  <!-- Geometric structural lines -->
+  <path d="M64 256h384M256 64v384" stroke="#1A1A1A" stroke-width="2"/>
+  <path d="M120 120l272 272M120 392l272-272" stroke="#151515" stroke-width="2"/>
   
-  <!-- Animated Cyber Rings -->
-  <g class="ring">
-    <circle cx="256" cy="256" r="210" fill="none" stroke="#00F0FF" stroke-width="2" stroke-dasharray="20 40 60 40" opacity="0.5"/>
-    <circle cx="256" cy="45" r="5" fill="#00FF66"/>
-    <circle cx="256" cy="467" r="5" fill="#00FF66"/>
-  </g>
-  <g class="ring-reverse">
-    <circle cx="256" cy="256" r="195" fill="none" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="10 30" opacity="0.3"/>
-    <circle cx="61" cy="256" r="4" fill="#00F0FF"/>
-    <circle cx="451" cy="256" r="4" fill="#00F0FF"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+
+  <!-- Tactical Rings -->
+  <g class="ring-outer">
+    <circle cx="256" cy="256" r="210" fill="none" stroke="#333333" stroke-width="1.5" stroke-dasharray="8 24"/>
+    <circle cx="256" cy="46" r="4" fill="#D79A5B"/>
+    <circle cx="256" cy="466" r="4" fill="#D79A5B"/>
   </g>
 
-  <!-- Outer Cyber Hex Shield -->
-  <g class="core-glow">
-    <polygon points="256,70 410,150 410,330 256,440 102,330 102,150" fill="none" stroke="url(#shieldGrad)" stroke-width="8"/>
-    <!-- Inner Shield Fill -->
-    <polygon points="256,86 394,158 394,322 256,422 118,322 118,158" fill="#111827" opacity="0.9"/>
+  <g class="ring-inner">
+    <circle cx="256" cy="256" r="190" fill="none" stroke="#718B78" stroke-width="1.5" stroke-dasharray="40 80" opacity="0.6"/>
   </g>
 
-  <!-- Monogram A + Z Embedded Geometry -->
-  <!-- 'A' Structure -->
-  <path d="M256 120 L340 280 H300 L256 195 L212 280 H172 Z" fill="#00FF66"/>
-  <!-- Crossbar & 'Z' Slash -->
-  <path d="M200 240 H312 L180 360 H340 V385 H170 V360 L300 240 H200 Z" fill="#00F0FF"/>
+  <!-- Monolith Core Base -->
+  <polygon points="256,80 400,160 400,352 256,432 112,352 112,160" fill="#0D0D0D" stroke="#222222" stroke-width="4"/>
 
-  <!-- Center Core Security Node -->
-  <circle cx="256" cy="240" r="14" fill="#090C10" stroke="#00FF66" stroke-width="4"/>
-  <circle cx="256" cy="240" r="5" fill="#00FF66"/>
+  <!-- Inner Bevel/Structure -->
+  <polygon points="256,100 376,170 376,342 256,412 136,342 136,170" fill="#141414"/>
 
-  <!-- Tech Node Connectors -->
-  <circle cx="256" cy="70" r="6" fill="#00F0FF"/>
-  <circle cx="410" cy="150" r="6" fill="#00FF66"/>
-  <circle cx="410" cy="330" r="6" fill="#9333EA"/>
-  <circle cx="256" cy="440" r="6" fill="#00FF66"/>
-  <circle cx="102" cy="330" r="6" fill="#9333EA"/>
-  <circle cx="102" cy="150" r="6" fill="#00F0FF"/>
+  <!-- Monogram A + Z (Copper & Sage/Steel) -->
+  <g class="copper-glow">
+    <!-- 'A' Structure in Copper -->
+    <path d="M256 130 L340 280 H300 L256 195 L212 280 H172 Z" fill="url(#copperGrad)"/>
+    <!-- Crossbar & 'Z' Slash in Steel/Sage -->
+    <path d="M200 240 H312 L180 360 H340 V385 H170 V360 L300 240 H200 Z" fill="#8E918F"/>
+  </g>
+
+  <!-- Central Locking Node -->
+  <circle cx="256" cy="240" r="12" fill="#0A0A0A" stroke="url(#copperGrad)" stroke-width="3"/>
+
+  <!-- Perimeter Nodes -->
+  <circle cx="256" cy="80" r="5" fill="#444444"/>
+  <circle cx="400" cy="160" r="5" fill="#444444"/>
+  <circle cx="400" cy="352" r="5" fill="#444444"/>
+  <circle cx="256" cy="432" r="5" fill="#444444"/>
+  <circle cx="112" cy="352" r="5" fill="#444444"/>
+  <circle cx="112" cy="160" r="5" fill="#444444"/>
+
 </svg>

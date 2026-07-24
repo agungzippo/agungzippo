@@ -1,30 +1,32 @@
 <div align="center">
-  <img src="./assets/hero.svg" alt="Agung Laksono — Senior Fullstack Engineer" width="100%" />
+  <img src="./assets/hero.gif" alt="Agung Laksono — Senior Fullstack & Penetration Systems Engineer" width="100%" />
 </div>
 
-## Building systems that survive production
+## Building systems that survive production & penetration audits
 
-I’m **Agung Laksono**, a Senior Fullstack Engineer and Technical Lead from North Sumatra, Indonesia, with **7+ years** of experience shipping production software across fintech, legal technology, logistics, healthcare, and multi-tenant SaaS.
+I’m **Agung Laksono**, a Senior Fullstack Engineer & Penetration Systems Lead from North Sumatra, Indonesia, with **7+ years** of experience shipping resilient production software across fintech, legal technology, cybersecurity operations, logistics, healthcare, and multi-tenant SaaS.
 
-My work sits at the intersection of product thinking and systems engineering: secure APIs, tenant-aware architecture, financial workflows, AI-assisted products, deployment automation, and interfaces that make complex operations understandable. I’ve improved backend processing performance by up to **40%** through query optimization, indexing, execution-plan analysis, and API restructuring.
+My work sits at the intersection of product thinking, penetration system security, and high-scale architecture: Zero-Trust APIs, tenant-aware isolation, financial engines, AI-assisted products, deployment automation, and robust systems engineered to withstand vulnerabilities. I’ve improved backend processing performance by up to **40%** through query optimization, execution-plan analysis, and API restructuring.
 
-- Currently engineering fintech and cooperative commerce workflows at **KSP Nasari**
+- Currently engineering fintech & cooperative commerce workflows at **KSP Nasari**
+- Specialized in **Penetration Systems, Zero-Trust API Architecture, and System Isolation**
 - Building with **TypeScript, React, Node.js, Python, PostgreSQL, and Docker**
-- Exploring **agentic AI, RAG, OCR, and local-first assistants**
+- Exploring **agentic AI, RAG, local-first assistants, and security automation**
 - Experienced with **KYC, onboarding, approvals, portfolio, watchlist, P&L, and market-data products**
 - Based in **North Sumatra, Indonesia**
 
 ## Engineering toolkit
 
-| Area                     | Stack                                                                                  |
-| ------------------------ | -------------------------------------------------------------------------------------- |
-| **Frontend**             | React, Next.js, Remix, React Router v7+, TypeScript, Vite, Tailwind CSS, SSR           |
-| **Backend**              | Node.js, NestJS, Hono, Bun, Express, Python, FastAPI, REST, GraphQL, gRPC              |
-| **Data**                 | PostgreSQL, MongoDB, Redis, Prisma ORM, Drizzle ORM, Qdrant, SQL optimization          |
-| **AI & OCR**             | LLM integration, agentic workflows, RAG, Ollama, Qwen, PaddleOCR, Tesseract, OpenCV    |
-| **Architecture**         | Multi-tenant SaaS, RBAC, JWT, API architecture, audit logging, secure tenant isolation |
-| **Delivery**             | Docker, Docker Compose, GitHub Actions, CI/CD, Nginx, VPS/cloud deployment             |
-| **AI-assisted workflow** | Claude Code, Codex, Gemini CLI                                                         |
+| Area | Stack |
+| --- | --- |
+| **Security & Pentest** | Zero-Trust Architecture, Penetration System Audits, API Security, Tenant Isolation, RBAC, JWT, Audit Logging |
+| **Frontend** | React, Next.js, Remix, React Router v7+, TypeScript, Vite, Tailwind CSS, SSR |
+| **Backend** | Node.js, NestJS, Hono, Bun, Express, Python, FastAPI, REST, GraphQL, gRPC |
+| **Data** | PostgreSQL, MongoDB, Redis, Prisma ORM, Drizzle ORM, Qdrant, SQL optimization |
+| **AI & OCR** | LLM integration, agentic workflows, RAG, Ollama, Qwen, PaddleOCR, Tesseract, OpenCV |
+| **Architecture** | Multi-tenant SaaS, RBAC, API architecture, audit logging, secure tenant isolation |
+| **Delivery** | Docker, Docker Compose, GitHub Actions, CI/CD, Nginx, VPS/cloud deployment |
+| **AI-assisted workflow** | Claude Code, Codex, Gemini CLI |
 
 ## Selected systems
 
@@ -65,13 +67,13 @@ I value maintainable contracts, practical security, observable deployments, and 
 
 - GitHub: [@agungzippo](https://github.com/agungzippo)
 - Email: [atungzippo@gmail.com](mailto:atungzippo@gmail.com)
-- LinkedIn: (https://www.linkedin.com/in/agung-laksono-53a833115/)
-- Portfolio: (https://agungzippo.tech)
+- LinkedIn: [Agung Laksono](https://www.linkedin.com/in/agung-laksono-53a833115/)
+- Portfolio: [agungzippo.tech](https://agungzippo.tech)
 
 ---
 
 <div align="center">
-  <img src="./assets/agung-mark.svg" width="72" alt="Agung Laksono monogram" />
+  <img src="./assets/agung-mark.gif" width="84" alt="Agung Laksono Cyber Shield Monogram" />
   <br />
-  <sub>Fintech · AI Product Engineering · Production Systems</sub>
+  <sub>Fintech · Penetration Systems · AI Product Engineering · Resilient Operations</sub>
 </div>

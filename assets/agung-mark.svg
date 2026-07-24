@@ -1,15 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-<title id="title">Agung Laksono monogram</title>
-<desc id="desc">An isometric AL monogram built from architectural blocks.</desc>
-<rect width="512" height="512" rx="96" fill="#171815"/>
-<path d="M256 74 405 160 256 246 107 160Z" fill="#D79A5B"/>
-<path d="M107 160 256 246v172L107 332Z" fill="#8C5E38"/>
-<path d="M405 160 256 246v172l149-86Z" fill="#B97943"/>
-<path d="m256 118 72 42-72 42-72-42Z" fill="#F1E7D4"/>
-<path d="m184 160 72 42v82l-72-42Z" fill="#CFC3AE"/>
-<path d="m328 160-72 42v82l72-42Z" fill="#E4D5BE"/>
-<path d="M166 270 226 304v69l-60-35Z" fill="#6F8A78"/>
-<path d="m286 304 60-34v68l-60 35Z" fill="#789683"/>
-<path d="M226 304h60v69h-60Z" fill="#F1E7D4"/>
-<path d="M149 365 256 427l107-62" fill="none" stroke="#F1E7D4" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#00FF66" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9333EA" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0B0F19"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Base background card -->
+  <rect width="512" height="512" rx="96" fill="url(#bgGrad)" stroke="#1F2937" stroke-width="4"/>
+  
+  <!-- Subtle Grid lines -->
+  <path d="M64 256h384M256 64v384" stroke="#1F2937" stroke-width="2" stroke-dasharray="8 8"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#1F2937" stroke-width="2"/>
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="12 12" opacity="0.4"/>
+
+  <!-- Outer Cyber Hex Shield -->
+  <polygon points="256,60 410,140 410,320 256,430 102,320 102,140" fill="none" stroke="url(#shieldGrad)" stroke-width="8" filter="url(#glow)"/>
+  
+  <!-- Inner Shield Fill -->
+  <polygon points="256,76 394,148 394,312 256,412 118,312 118,148" fill="#111827" opacity="0.85"/>
+
+  <!-- Monogram A + Z Embedded Geometry -->
+  <!-- 'A' Structure -->
+  <path d="M256 120 L340 280 H300 L256 195 L212 280 H172 Z" fill="#00FF66" opacity="0.9"/>
+  <!-- Crossbar & 'Z' Slash -->
+  <path d="M200 240 H312 L180 360 H340 V385 H170 V360 L300 240 H200 Z" fill="#00F0FF" filter="url(#glow)"/>
+
+  <!-- Center Core Security Node -->
+  <circle cx="256" cy="240" r="14" fill="#0B0F19" stroke="#00FF66" stroke-width="4"/>
+  <circle cx="256" cy="240" r="5" fill="#00FF66"/>
+
+  <!-- Tech Node Connectors -->
+  <circle cx="256" cy="60" r="6" fill="#00F0FF"/>
+  <circle cx="410" cy="140" r="6" fill="#00FF66"/>
+  <circle cx="410" cy="320" r="6" fill="#9333EA"/>
+  <circle cx="256" cy="430" r="6" fill="#00FF66"/>
+  <circle cx="102" cy="320" r="6" fill="#9333EA"/>
+  <circle cx="102" cy="140" r="6" fill="#00F0FF"/>
 </svg>

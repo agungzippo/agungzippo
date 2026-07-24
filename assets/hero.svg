@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">Agung Laksono — Senior Fullstack Engineer</title>
+<desc id="desc">Industrial isometric systems banner in charcoal, copper, cream, and sage.</desc>
+<defs>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0v32" fill="none" stroke="#34362F" stroke-width="1"/></pattern>
+  <linearGradient id="fade" x1="0" x2="1"><stop stop-color="#171815"/><stop offset="1" stop-color="#20221E"/></linearGradient>
+</defs>
+<rect width="1200" height="420" rx="28" fill="url(#fade)"/>
+<rect width="1200" height="420" rx="28" fill="url(#grid)" opacity=".75"/>
+<g transform="translate(760 42)">
+  <path d="m190 0 190 110-190 110L0 110Z" fill="#D79A5B"/>
+  <path d="m0 110 190 110v154L0 264Z" fill="#7A5031"/>
+  <path d="m380 110-190 110v154l190-110Z" fill="#B97943"/>
+  <path d="m190 48 111 64-111 64-111-64Z" fill="#EEE3CF"/>
+  <path d="m79 112 111 64v80L79 192Z" fill="#BDB29E"/>
+  <path d="m301 112-111 64v80l111-64Z" fill="#D8C9B2"/>
+  <path d="m40 249 69 40 69-40-69-40Z" fill="#718B78"/>
+  <path d="m109 289 69-40v58l-69 40Z" fill="#547060"/>
+  <path d="m271 249 69 40-69 40-69-40Z" fill="#718B78"/>
+  <path d="m202 289 69 40v58l-69-40Z" fill="#496353"/>
+  <g fill="#F4EBDD">
+    <circle cx="190" cy="112" r="10"/><circle cx="109" cy="249" r="8"/><circle cx="271" cy="249" r="8"/>
+  </g>
+  <g stroke="#F4EBDD" stroke-width="4" fill="none" opacity=".9"><path d="M190 122v52M116 246l59-53M264 246l-59-53"/></g>
+</g>
+<g transform="translate(72 84)">
+  <rect x="0" y="0" width="48" height="5" rx="2" fill="#D79A5B"/>
+  <text x="0" y="58" fill="#F4EBDD" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" letter-spacing="1">AGUNG LAKSONO</text>
+  <text x="0" y="101" fill="#AEB2A8" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" letter-spacing="2">SENIOR FULLSTACK ENGINEER</text>
+  <text x="0" y="168" fill="#D7D4CC" font-family="Georgia, serif" font-size="25">Engineering resilient products across</text>
+  <text x="0" y="202" fill="#D7D4CC" font-family="Georgia, serif" font-size="25">fintech, AI, and high-scale web systems.</text>
+  <g transform="translate(0 252)" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="1">
+    <rect width="118" height="34" rx="5" fill="#EEE3CF"/><text x="16" y="22" fill="#262720">FINTECH</text>
+    <rect x="130" width="86" height="34" rx="5" fill="#718B78"/><text x="151" y="22" fill="#F7F3EA">AI / RAG</text>
+    <rect x="228" width="154" height="34" rx="5" fill="#D79A5B"/><text x="245" y="22" fill="#27231E">SYSTEM DESIGN</text>
+  </g>
+</g>
+</svg>

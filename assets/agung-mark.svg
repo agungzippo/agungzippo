@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+<title id="title">Agung Laksono monogram</title>
+<desc id="desc">An isometric AL monogram built from architectural blocks.</desc>
+<rect width="512" height="512" rx="96" fill="#171815"/>
+<path d="M256 74 405 160 256 246 107 160Z" fill="#D79A5B"/>
+<path d="M107 160 256 246v172L107 332Z" fill="#8C5E38"/>
+<path d="M405 160 256 246v172l149-86Z" fill="#B97943"/>
+<path d="m256 118 72 42-72 42-72-42Z" fill="#F1E7D4"/>
+<path d="m184 160 72 42v82l-72-42Z" fill="#CFC3AE"/>
+<path d="m328 160-72 42v82l72-42Z" fill="#E4D5BE"/>
+<path d="M166 270 226 304v69l-60-35Z" fill="#6F8A78"/>
+<path d="m286 304 60-34v68l-60 35Z" fill="#789683"/>
+<path d="M226 304h60v69h-60Z" fill="#F1E7D4"/>
+<path d="M149 365 256 427l107-62" fill="none" stroke="#F1E7D4" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+</svg>
